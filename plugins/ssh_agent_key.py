@@ -17,10 +17,9 @@ except ImportError:
 else:
     cryptography = True
 
-from volatility import obj as obj
-from volatility.plugins.linux import common as linux_common
-from volatility.plugins.linux import pslist as linux_pslist
-from volatility.renderers import TreeGrid
+from volatility3.framework import objects as obj
+from volatility3.framework.plugins.linux import pslist as linux_pslist
+from volatility3.framework.renderers import TreeGrid
 
 
 openssl_vtypes_64 = {
