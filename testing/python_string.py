@@ -12,7 +12,7 @@ the_dict = {"this is the key": "this is the value",
 
 if __name__ == "__main__":
     while True:
-        print string1, string2,
-        print string2
-        print the_dict
+        print(string1, string2)
+        print(string2)
+        print(the_dict)
         sleep(60)
