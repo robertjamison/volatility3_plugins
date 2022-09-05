@@ -456,7 +456,6 @@ class linux_ssh_keys(linux_pslist.linux_pslist):
         if not os.path.isdir(os.path.expanduser(self._config.DUMP_DIR)):
             raise AssertionError(self._config.DUMP_DIR + " is not a directory")
 
-        linux_common.set_plugin_members(self)
         tasks = linux_pslist.linux_pslist.calculate(self)
 
         for task in tasks:
